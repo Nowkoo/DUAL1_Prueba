@@ -1,4 +1,4 @@
-public abstract class DispositivoAlmacenamiento implements Almacenable {
+public abstract class DispositivoAlmacenamiento extends ObjetoGiratorio implements Almacenable {
     private final String nombre;
     private final String contenido = "No contengo datos.";
     private final float capacidad;
@@ -14,6 +14,11 @@ public abstract class DispositivoAlmacenamiento implements Almacenable {
         return "Me llamo " + nombre + ". Soy un " + getClass().getSimpleName() + " de " +
                 capacidad + "Gb. " + contenido;
 
+    }
+
+    @Override
+    void girar() {
+        System.out.println("Giro a " + getRpm() + "rpm.");
     }
 
     public String getNombre() {

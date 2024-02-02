@@ -1,8 +1,15 @@
 public class main {
     public static void main(String[] args) {
+        pruebas();
+    }
+
+    static void pruebas() {
         pruebasCD();
-        System.out.println();
         pruebasDiscoDuro();
+        pruebasBlueRay();
+        pruebasVinilo();
+        pruebasFrisbee();
+        pruebasRueda();
     }
 
     static void pruebasCD() {
@@ -11,6 +18,7 @@ public class main {
         cd.girar();
         cd.escribirDatos();
         cd.leerDatos();
+        System.out.println();
     }
 
     static void pruebasDiscoDuro() {
@@ -19,5 +27,36 @@ public class main {
         discoDuro.girar();
         discoDuro.escribirDatos();
         discoDuro.leerDatos();
+        System.out.println();
+    }
+
+    static void pruebasBlueRay() {
+        DispositivoAlmacenamiento blueRay = new BlueRay("El rey león", 12, 500);
+        System.out.println(blueRay);
+        blueRay.girar();
+        blueRay.escribirDatos();
+        blueRay.leerDatos();
+        System.out.println();
+    }
+
+    static void pruebasVinilo() {
+        DispositivoAlmacenamiento vinilo = new Vinilo("Abbey Road", 0.5f,33);
+        System.out.println(vinilo);
+        vinilo.girar();
+        vinilo.escribirDatos();
+        vinilo.leerDatos();
+        System.out.println();
+    }
+
+    static void pruebasRueda() {
+        ObjetoGiratorio rueda = new Rueda();
+        System.out.println(rueda);
+        rueda.girar();
+    }
+
+    static void pruebasFrisbee() {
+        ObjetoGiratorio frisbee = new Frisbee();
+        System.out.println(frisbee);
+        frisbee.girar();
     }
 }

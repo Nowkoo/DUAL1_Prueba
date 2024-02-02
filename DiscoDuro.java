@@ -4,11 +4,6 @@ public class DiscoDuro extends DispositivoAlmacenamiento {
     }
 
     @Override
-    public void girar() {
-        System.out.println("Estoy girando a " + getRpm() + "rpm.");
-    }
-
-    @Override
     public void escribirDatos() {
         System.out.println("Escribo los datos con un cabezal magnético.");
     }

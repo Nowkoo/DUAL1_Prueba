@@ -1,5 +1,5 @@
-public class CD extends DispositivoAlmacenamiento {
-    public CD(String nombre, float capacidad, int rpm) {
+public class BlueRay extends DispositivoAlmacenamiento implements Almacenable {
+    public BlueRay(String nombre, float capacidad, int rpm) {
         super(nombre, capacidad, rpm);
     }
 
